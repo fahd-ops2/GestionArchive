@@ -16,9 +16,9 @@ namespace ClassLibrary
         {
             try
             {
-                string connectionString = @"Data Source=.\SQLEXPRESS;Initial Catalog=LyceeIbnSina;Integrated Security=False;User ID=sa;Password=123456;";
+                
                 //Data Source=192.168.1.6\SERVER;Initial Catalog=LyceeIbnSina;User ID=sa;Password=***********
-                string connectionString2 = @"Data Source=192.168.1.6\SERVER;Initial Catalog=LyceeIbnSina;User ID=sa;Password=123456;";
+                string connectionString2 = @"Data Source=192.168.1.6;Initial Catalog=LyceeIbnSina;User ID=fahd;Password=azertyuiop789;";
                 connection = new SqlConnection(connectionString2);
             }
             catch (Exception ex)

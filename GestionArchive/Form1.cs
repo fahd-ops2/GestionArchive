@@ -119,5 +119,10 @@ INNER JOIN Classe c on c.IdClasse = a.IdClasse WHERE e.IdEtudiant = 2
                 con.Close();
             }
         }
+
+        private void btnShow_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
