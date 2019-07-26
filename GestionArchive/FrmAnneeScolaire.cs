@@ -50,11 +50,15 @@ namespace GestionArchive
 
         private void update_Click(object sender, EventArgs e)
         {
-
+            
            var UPDATE= new AnneeScolaireDAO();
            var annee = UPDATE.GetAnneeScolaire(int.Parse(dtgv.CurrentRow.Cells[0].Value.ToString()));
-            annee.Annee = cba.Text;
             
+            annee.Annee = cba.Text;
+            annee.Etudiant.IdEtudiant = int.Parse(cbe.Text);
+            annee.Classe.IdClasse = int.Parse(cbc.Text);
+            UPDATE.UpdateAnneeScolaire(annee);
+
         }
     }
  
